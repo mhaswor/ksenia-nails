@@ -1,0 +1,6 @@
+# Only explicitly approved deployment files can enter this public repository.
+/*
+!/.gitignore
+!/index.html
+!/.nojekyll
+!/README.md
