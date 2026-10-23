@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow">
 <meta name="description" content="Ксения — сертифицированный мастер маникюра, педикюра и наращивания в Абинске. Работы, услуги и запись в Telegram.">
 <title>Ксения — маникюр и педикюр в Абинске</title>
-<!-- Одностраничный сайт Ксении: услуги, портфолио и запись. -->
+<!-- Защищённый предпросмотр. Исходники хранятся отдельно от публикации. -->
 <style>
 /* Встроенные шрифты и исходное изображение находятся в конце style. */
 :root{color-scheme:dark;--ground:#121212;--surface:#1a1a1a;--raised:#242322;--ink:#f0efed;--muted:#b9b5af;--accent:#cdb99a;--accent-ink:#191613;--display:"Cormorant Garamond",Georgia,serif;--body:"Manrope",Arial,sans-serif;--small:13px;--text:16px;--lead:24px;--heading:clamp(38px,4.3vw,60px);--hero-size:clamp(48px,5.6vw,80px);--gutter:clamp(20px,5vw,80px);--section-space:clamp(76px,8vw,120px);--ease:cubic-bezier(.22,1,.36,1)}
@@ -33,7 +33,7 @@ a,button,summary{-webkit-tap-highlight-color:transparent}:focus-visible{outline:
 .button{display:inline-flex;align-items:center;justify-content:space-between;gap:28px;min-height:60px;padding:18px 24px;border:0;background:var(--accent);color:var(--accent-ink);font-size:var(--text);font-weight:500;transition:transform .3s var(--ease)}
 .button .arrow{display:inline-block;transition:transform .3s var(--ease)}.button:hover{transform:translateY(-3px)}.button:hover .arrow{transform:translate(3px,-3px)}.button:active{transform:translateY(0) scale(.98)}
 .hero-note{margin-top:16px;font-size:var(--small);color:var(--muted)}
-.hero-visual{position:relative;padding-bottom:32px}.photo-pair{display:grid;grid-template-columns:1.35fr 1fr;align-items:end;gap:16px}.photo-pair .hero-shot:nth-child(2){margin-top:100px}
+.hero-visual{position:relative;padding-bottom:32px}.photo-pair{display:grid;grid-template-columns:1fr 1fr;align-items:start;gap:16px}
 /* Готовые контейнеры под оригиналы фото. Для замены: background-image:url(...),
 background-size:cover; background-position:center на соответствующем ::before. */
 .photo{position:relative;aspect-ratio:236/315;overflow:hidden;background-color:var(--raised)}
@@ -62,11 +62,11 @@ details{margin-top:14px}summary{display:flex;align-items:center;justify-content:
 @keyframes enter{from{opacity:.15;transform:translateY(22px)}to{opacity:1;transform:none}}
 @keyframes photo-enter{from{opacity:.4;transform:translateY(16px) scale(.98)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:no-preference){.hero-copy>*{animation:enter .9s var(--ease) both}.hero-description{animation-delay:.07s}.hero-actions{animation-delay:.14s}.hero-visual .photo{animation:photo-enter 1.15s var(--ease) both}.hero-visual .hero-shot:nth-child(2) .photo{animation-delay:.16s}.arrived{animation:enter .7s var(--ease) both}}
-@media(max-width:1050px){:root{--hero-size:clamp(40px,5.3vw,56px)}.header-right,.navigation{gap:22px}.hero{gap:28px}.photo-pair{gap:10px}.photo-pair .hero-shot:nth-child(2){margin-top:70px}.service{padding:24px}.service-top{flex-direction:column;gap:14px}.service h3{max-width:none}.care-layout{gap:6%}.fact{grid-template-columns:1fr;gap:12px}}
+@media(max-width:1050px){:root{--hero-size:clamp(40px,5.3vw,56px)}.header-right,.navigation{gap:22px}.hero{gap:28px}.photo-pair{gap:10px}.service{padding:24px}.service-top{flex-direction:column;gap:14px}.service h3{max-width:none}.care-layout{gap:6%}.fact{grid-template-columns:1fr;gap:12px}}
 @media(max-width:760px){
  :root{--hero-size:clamp(36px,9.8vw,64px);--heading:clamp(36px,8.4vw,54px);--lead:22px}
  .site-header{padding-block:24px;align-items:flex-start}.header-right{flex-direction:column;align-items:flex-end;gap:8px}.navigation{gap:18px}.navigation a{padding-block:0;min-height:32px;display:inline-flex;align-items:center}.navigation a:last-child{display:none}
- .hero{grid-template-columns:1fr;gap:32px;padding-top:18px;padding-bottom:0}.hero-copy{padding:0}.hero-description{max-width:440px;margin-top:24px}.hero-actions{margin-top:24px}.button{min-height:58px;padding:16px 20px}.hero-visual{padding-bottom:0}.photo-pair{grid-template-columns:1.35fr 1fr;gap:14px}.photo-pair .hero-shot:nth-child(2){margin-top:44px}.hero-visual figcaption{margin-top:14px}.hero-bottom{margin-top:28px;padding-top:0}.hero-bottom span{max-width:190px}
+ .hero{grid-template-columns:1fr;gap:32px;padding-top:18px;padding-bottom:0}.hero-copy{padding:0}.hero-description{max-width:440px;margin-top:24px}.hero-actions{margin-top:24px}.button{min-height:58px;padding:16px 20px}.hero-visual{padding-bottom:0}.photo-pair{grid-template-columns:1.35fr 1fr;gap:14px}.hero-visual figcaption{margin-top:14px}.hero-bottom{margin-top:28px;padding-top:0}.hero-bottom span{max-width:190px}
  .section-heading{display:block;margin-bottom:28px}.section-heading p{margin-top:20px}.services-grid{grid-template-columns:1fr;gap:12px}.service{padding:26px 22px}.service-top{flex-direction:row;gap:18px}.service h3{max-width:200px}.price{font-size:24px}.service-description{margin-top:16px}
  .filters{margin-top:24px}.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 12px}.work figcaption{flex-direction:column;gap:1px;padding-top:10px}.instagram-note{padding:24px;flex-direction:column;align-items:flex-start;gap:10px}
  .care-layout{grid-template-columns:1fr;gap:36px}.care-intro p{margin-top:20px;max-width:440px}.care-facts{gap:30px}.fact{gap:12px}.fact p{max-width:none}.booking{padding-block:44px}.booking-layout{grid-template-columns:1fr;gap:28px}.booking-action{justify-self:stretch}.booking-action .button{width:100%}.booking-action p{margin-top:14px}.footer-top{align-items:flex-start;flex-direction:column;gap:20px}.footer-top p{max-width:320px}.footer-bottom{gap:16px;flex-wrap:wrap}
